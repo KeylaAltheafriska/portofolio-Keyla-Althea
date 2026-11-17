@@ -1,0 +1,324 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Personal Portfolio | Keyla</title>
+
+<style>
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Trebuchet MS', sans-serif;
+    min-height: 100vh;
+    background:
+        radial-gradient(circle at top left, #ffffff 0%, transparent 35%),
+        linear-gradient(135deg, #e9ddff, #dcecff, #f8e4f3);
+    color: #624d83;
+    padding: 35px 18px;
+}
+
+/* MAIN CONTAINER */
+.container {
+    max-width: 850px;
+    margin: auto;
+}
+
+/* HEADER */
+header {
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    padding: 45px 20px;
+    background: rgba(255,255,255,0.72);
+    border: 2px solid white;
+    border-radius: 28px;
+    box-shadow: 0 10px 30px #9e87c533;
+    margin-bottom: 30px;
+}
+
+.decoration {
+    font-size: 25px;
+    color: #a58bcf;
+    letter-spacing: 8px;
+}
+
+header h1 {
+    font-size: 36px;
+    color: #8464b1;
+    margin: 15px 0 10px;
+    letter-spacing: 2px;
+}
+
+header p {
+    color: #847895;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.tagline {
+    display: inline-block;
+    margin-top: 18px;
+    padding: 8px 17px;
+    border-radius: 30px;
+    background: #eee5ff;
+    color: #8464b1;
+    font-size: 11px;
+    letter-spacing: 1px;
+}
+
+/* SECTION TITLE */
+.section-title {
+    text-align: center;
+    font-size: 13px;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+    color: #8064a7;
+}
+
+/* CARD LIST */
+.cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    gap: 17px;
+    padding: 25px 22px;
+    border: 2px solid white;
+    border-radius: 23px;
+    background: rgba(255,255,255,0.78);
+    box-shadow: 0 8px 22px #9583b522;
+    transition: 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 13px 25px #9583b544;
+}
+
+.number {
+    font-size: 27px;
+    font-weight: bold;
+    color: #a58bcf;
+}
+
+.info {
+    flex: 1;
+}
+
+.info h2 {
+    font-size: 18px;
+    color: #695287;
+    margin-bottom: 7px;
+}
+
+.info p {
+    font-size: 12px;
+    color: #9789a8;
+    line-height: 1.5;
+}
+
+.icon {
+    font-size: 27px;
+}
+
+/* BUTTON */
+.open {
+    text-decoration: none;
+    color: white;
+    background: #a58bcf;
+    padding: 12px 17px;
+    border-radius: 13px;
+    font-size: 11px;
+    font-weight: bold;
+    white-space: nowrap;
+    transition: 0.3s;
+}
+
+.open:hover {
+    background: #8061ad;
+    transform: scale(1.05);
+}
+
+/* CARD COLORS */
+.card:nth-child(2) .open {
+    background: #85aeda;
+}
+
+.card:nth-child(3) .open {
+    background: #d89fc4;
+}
+
+.card:nth-child(2) .number {
+    color: #85aeda;
+}
+
+.card:nth-child(3) .number {
+    color: #d89fc4;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    margin-top: 38px;
+    padding: 20px;
+    color: #8c7ba6;
+    font-size: 11px;
+    line-height: 2;
+}
+
+/* MOBILE RESPONSIVE */
+@media (max-width: 550px) {
+    body {
+        padding: 22px 13px;
+    }
+
+    header {
+        padding: 35px 15px;
+    }
+
+    header h1 {
+        font-size: 27px;
+    }
+
+    header p {
+        font-size: 12px;
+    }
+
+    .card {
+        gap: 10px;
+        padding: 19px 13px;
+    }
+
+    .number {
+        font-size: 21px;
+    }
+
+    .info h2 {
+        font-size: 14px;
+    }
+
+    .info p {
+        font-size: 10px;
+    }
+
+    .icon {
+        font-size: 21px;
+    }
+
+    .open {
+        padding: 10px;
+        font-size: 9px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- HEADER -->
+    <header>
+        <div class="decoration">✧ ˚ ༘ ⋆｡♡</div>
+
+        <h1>MY PERSONAL PORTFOLIO</h1>
+
+        <p>
+            Hello, welcome to my personal portfolio!<br>
+            Selamat datang di halaman portofolio saya.
+            Silakan pilih karya yang ingin kamu lihat.
+        </p>
+
+        <div class="tagline">
+            ✦ MY JOURNEY • MY WORK • MY STORY ✦
+        </div>
+    </header>
+
+    <!-- PORTFOLIO MENU -->
+    <h3 class="section-title">
+        ✧ EXPLORE MY WORK ✧
+    </h3>
+
+    <div class="cards">
+
+        <!-- 01 SURAT LAMARAN -->
+        <div class="card">
+            <div class="number">01.</div>
+
+            <div class="info">
+                <h2>Surat Lamaran Kerja</h2>
+                <p>Dokumen surat lamaran pekerjaan</p>
+            </div>
+
+            <div class="icon">💌</div>
+
+            <a href="https://docs.google.com/document/d/1c1wv_mgMLfXzQJtObrdthJLfs-7KlhHbavlZsmq7eOA/edit?usp=drivesdk"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="open">
+                OPEN ↗
+            </a>
+        </div>
+
+        <!-- 02 CV WEBSITE -->
+        <div class="card">
+            <div class="number">02.</div>
+
+            <div class="info">
+                <h2>CV Website</h2>
+                <p>Curriculum Vitae berbasis website</p>
+            </div>
+
+            <div class="icon">💻</div>
+
+            <a href="https://keylaaltheafriska.github.io/CV-Keyla-althea/?utm_source=chatgpt.com"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="open">
+                OPEN ↗
+            </a>
+        </div>
+
+        <!-- 03 CV POWERPOINT -->
+        <div class="card">
+            <div class="number">03.</div>
+
+            <div class="info">
+                <h2>CV PowerPoint</h2>
+                <p>Presentasi curriculum vitae kreatif</p>
+            </div>
+
+            <div class="icon">🎀</div>
+
+            <a href="https://canva.link/rtt8nh02nl5qmhd"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="open">
+                OPEN ↗
+            </a>
+        </div>
+
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>MADE WITH ♡ BY KEYLA ALTHEAFRISKA SHALSABILLA</p>
+        <p>© 2026 MY PERSONAL PORTFOLIO</p>
+        <p>Thank you for visiting my page! ✧</p>
+    </footer>
+
+</div>
+
+</body>
+</html>
